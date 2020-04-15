@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <button class="scrollUp">^ Top</button>
+    <header class="main__hero">
+      <h1>Covid-19 Landing Page </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Social distancing">
+      <div class="landing__container">
+        <h2>Social distancing</h2>
+        <p>Social distancing is an effective protective measure against the new coronavirus, says the World Health Organization. It recommends people keep at least 1 metre apart. Around the world, measures to ensure people observe this are in force and among the approaches taken into action include staying at home, closing of schools and other entertainment places like bars and sports events. Social distancing strategies aim to reduce contact of infected persons with large groups by closing schools and workplaces, restricting travel, and cancelling mass gatherings. Social distancing also includes that people stay at least six feet apart (1.83 meters)</p>
+
+        <p>Social distancing can be achieved by doing the following
+
+          <ul>
+            <li>
+            The World Health Organization (WHO) recommends people should keep at least 1 metre away from each other to protect against coronavirus
+            </li>
+            <li>
+              Staying at home and enforcing a self quarantine if you suspect to have coronavirus
+            </li>
+            <li>
+              Avoiding social gathering, and in some countries its now illegal to gather 3 or 5 people
+            </li>
+          </ul> 
+          </p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Good sanitation">
+      <div class="landing__container">
+        <h2>Good sanitation</h2>
+        <p>What we do know, however, is that handwashing with soap or a hand sanitizer that contains at least 60% alcohol is essential (WHO ,CDC ). Because COVID-19 can be transmitted by contacting infective droplets and touching our noses, mouths, and eyes (or vice-versa), handwashing with soap is identified as one of the most critical actions for stopping its spread through covering surfaces that have been contacted by an infected individual.
+          Clean and disinfect frequently touched surfaces daily. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.
+        </p>
+
+        <p>Good sanitation can be achieved by doing the following <br>
+
+          Thorough hand washing and scrubbing with soap or an alcohol sanitizer, <br>
+          Stop touching your soft parts of the face like nose, eyes and the mouth, <br>
+          clean the metallic, plastic, wooden items at home and cleaning all the clothes at home in time
+        </p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Personal protection">
+      <div class="landing__container">
+        <h2>Personal protection equipment</h2>
+        <p>Precautions must be taken to minimise the risk of virus transmission, especially in healthcare settings when performing procedures that can generate aerosols, such as intubation or hand ventilation. For healthcare professionals caring for people with COVID19, the CDC recommends using full protection right from the head and protecting the eyes. 
+          Some countries also recommend healthy individuals to wear face masks, including China, Hong Kong, Thailand, Czech Republic and Austria.
+        </p>
+       
+
+        <p>
+          personal protection in the fight against Covid-19 can be achieved by doing the following
+          <ul>
+            <li>
+              wearing a medical mask if you have respiratory symptoms and performing hand hygiene after disposing of the mask
+            </li>
+            <li>
+              Ensures that the health workers are protected to reduce on the chances of themselves being infected, WHO recommend health staff wear a full gown and visor
+            </li>
+          </ul>
+        </p>
+      </div>
+    </section>
+    <section id="section4" data-nav="vaccines">
+      <div class="landing__container">
+        <h2>Vaccination</h2>
+        <p>There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19). Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenza type B (Hib) vaccine, do not provide protection against the new coronavirus.
+        </p>
+
+        <p>
+          Researchers are trying to develop a vaccine against 2019-nCoV, and WHO is supporting their efforts.
+          vaccination against respiratory illnesses is highly recommended to protect your health.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
